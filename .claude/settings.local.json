@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xargs ls:*)",
+      "Bash(source .venv/bin/activate)",
+      "Bash(python3 -c \":*)",
+      "Bash(.venv/bin/pip install:*)",
+      "Bash(.venv/bin/python3 -c \":*)",
+      "WebFetch(domain:github.com)",
+      "Bash(.venv/bin/python -c \":*)",
+      "mcp__context7__resolve-library-id",
+      "mcp__context7__query-docs",
+      "Bash(python3:*)",
+      "Bash(/tmp/add_section5.py:*)",
+      "Bash(/tmp/replace_mt_go.py:*)",
+      "Bash(/tmp/add_section6.py:*)",
+      "Bash(/tmp/add_votos_histogramas.py:*)",
+      "Bash(sort -t' ' -k2 -n)",
+      "Bash(/tmp/add_pearson.py:*)",
+      "Bash(curl -s https://raw.githubusercontent.com/heitorctmba/MBA-01-estatistica-eleicoes/main/README.md)"
+    ]
+  }
+}
