@@ -100,7 +100,8 @@ clara dos resultados e sua reprodutibilidade.
 
 A estatística descritiva constitui o conjunto de técnicas que visa sumarizar
 e apresentar de forma sistemática as características de um conjunto de dados.
-Seu objetivo mas sim organizar e descrever os dados de forma clara e objetiva.
+Seu objetivo não é inferir parâmetros populacionais, mas sim organizar e
+descrever os dados de forma clara e objetiva.
 
 \subsection{Medidas de Posição e Dispersão}
 
@@ -165,14 +166,8 @@ tarifa registrado, não é possível confirmar que o indivíduo era um passageir
 pagante, e sua inclusão distorceria as medidas de tendência central e
 dispersão da variável Fare. A amostra final utilizada nas análises compreende
 \textbf{872 passageiros}. As variáveis foram renomeadas para o português e
-mapeadas conforme descrito na Tabela~\ref{tab:variaveis}.
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=\columnwidth]{table_3_2.png}
-  \caption{Identificação e classificação das variáveis do dataset Titanic.}
-  \label{tab:variaveis}
-\end{figure}
+classificadas em qualitativas e quantitativas; essa caracterização inicial é
+apresentada na Seção~\ref{subsec:caracterizacao_inicial}.
 
 \subsection{Correção Monetária das Tarifas}
 
@@ -189,8 +184,52 @@ correção composto a partir de duas fontes:
 
 O fator total resultante é $107{,}14 = 81{,}46 \times 1{,}3153$, aplicado
 multiplicativamente a cada tarifa original para obter a coluna
-\textit{Tarifa 2024}. A composição detalhada do índice é apresentada na
-Tabela~\ref{tab:inflacao}.
+\textit{Tarifa 2024}. A composição detalhada desse índice é apresentada na
+Seção~\ref{subsec:caracterizacao_inicial}.
+
+\subsection{Faixas Etárias}
+
+A variável idade contínua foi discretizada em quatro faixas etárias
+definidas pelo autor com base em critérios demográficos intuitivos. As
+faixas definidas foram: \textbf{Criança} (0--12 anos), \textbf{Jovem}
+(12--17 anos), \textbf{Adulto} (17--59 anos) e \textbf{Idoso}
+(59--100 anos). A distribuição observada em cada faixa é apresentada na
+Seção~\ref{subsec:caracterizacao_inicial}.
+
+\subsection{Procedimentos Analíticos}
+
+A análise foi organizada em cinco etapas complementares. Primeiro, as
+variáveis foram classificadas em qualitativas e quantitativas. Em seguida,
+foram calculadas medidas de tendência central e dispersão para idade e
+tarifa, incluindo quartis e percentis selecionados. Na terceira etapa, foram
+construídos histogramas e curvas de densidade para descrever a forma das
+distribuições. Na quarta etapa, variáveis qualitativas e perfis de
+sobrevivência foram analisados por meio de gráficos de barras, pizza e barras
+empilhadas proporcionais. Por fim, a relação entre idade e tarifa corrigida
+foi examinada com gráfico de dispersão, matriz de correlação e coeficiente de
+Pearson.
+
+% =========================================================================
+\section{Resultados e Discussão}
+
+\subsection{Caracterização Inicial do Dataset}
+\label{subsec:caracterizacao_inicial}
+
+Antes das análises centrais, é importante registrar três saídas da etapa de
+preparação dos dados: a identificação das variáveis, a composição do fator de
+correção monetária e a distribuição da amostra por faixa etária.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\columnwidth]{table_3_2.png}
+  \caption{Identificação e classificação das variáveis do dataset Titanic.}
+  \label{tab:variaveis}
+\end{figure}
+
+A Tabela~\ref{tab:variaveis} mostra que o dataset combina variáveis
+qualitativas, como gênero, classe e sobrevivência, com variáveis
+quantitativas, como idade e tarifa. Essa separação orienta a escolha dos
+métodos descritivos aplicados ao longo do trabalho.
 
 \begin{figure}[H]
   \centering
@@ -199,11 +238,10 @@ Tabela~\ref{tab:inflacao}.
   \label{tab:inflacao}
 \end{figure}
 
-\subsection{Faixas Etárias}
-
-A variável idade contínua foi discretizada em quatro faixas etárias
-definidas pelo autor com base em critérios demográficos intuitivos,
-conforme a Tabela~\ref{tab:faixas}:
+A Tabela~\ref{tab:inflacao} resume o fator acumulado de 107,14 utilizado para
+converter as tarifas originais de 1912 em valores equivalentes de 2024. Essa
+transformação não altera a ordem relativa dos passageiros, mas torna a
+interpretação econômica da tarifa mais concreta e atual.
 
 \begin{figure}[H]
   \centering
@@ -212,12 +250,11 @@ conforme a Tabela~\ref{tab:faixas}:
   \label{tab:faixas}
 \end{figure}
 
-As quatro faixas definidas foram: \textbf{Criança} (0--12 anos, $n=79$),
-\textbf{Jovem} (12--17 anos, $n=51$), \textbf{Adulto} (17--59 anos,
-$n=711$) e \textbf{Idoso} (59--100 anos, $n=31$).
+Como mostra a Tabela~\ref{tab:faixas}, a amostra é fortemente concentrada em
+adultos ($n=711$), com participação bem menor de crianças, jovens e idosos.
+Essa composição ajuda a contextualizar os padrões observados nas análises de
+sobrevivência por faixa etária.
 
-% =========================================================================
-\section{Resultados}
 
 \subsection{Estatísticas Descritivas}
 
