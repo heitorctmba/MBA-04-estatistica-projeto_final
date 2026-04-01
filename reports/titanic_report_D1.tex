@@ -219,7 +219,7 @@ Antes das análises centrais, é importante registrar três saídas da etapa de
 preparação dos dados: a identificação das variáveis, a composição do fator de
 correção monetária e a distribuição da amostra por faixa etária.
 
-\begin{figure}[H]
+\begin{figure}[t]
   \centering
   \includegraphics[width=\columnwidth]{table_3_2.png}
   \caption{Identificação e classificação das variáveis do dataset Titanic.}
@@ -231,7 +231,7 @@ qualitativas, como gênero, classe e sobrevivência, com variáveis
 quantitativas, como idade e tarifa. Essa separação orienta a escolha dos
 métodos descritivos aplicados ao longo do trabalho.
 
-\begin{figure}[H]
+\begin{figure}[t]
   \centering
   \includegraphics[width=0.9\columnwidth]{table_2_2_1.png}
   \caption{Composição do índice de correção monetária (1912→2024).}
@@ -243,7 +243,7 @@ converter as tarifas originais de 1912 em valores equivalentes de 2024. Essa
 transformação não altera a ordem relativa dos passageiros, mas torna a
 interpretação econômica da tarifa mais concreta e atual.
 
-\begin{figure}[H]
+\begin{figure}[t]
   \centering
   \includegraphics[width=0.65\columnwidth]{table_2_4.png}
   \caption{Distribuição de passageiros por faixa etária.}
@@ -261,7 +261,7 @@ sobrevivência por faixa etária.
 A Tabela~\ref{tab:descritivas} apresenta as principais estatísticas
 descritivas das variáveis quantitativas do dataset.
 
-\begin{figure}[H]
+\begin{figure}[t]
   \centering
   \includegraphics[width=\columnwidth]{table_3_1.png}
   \caption{Estatísticas descritivas das variáveis quantitativas do dataset Titanic.}
@@ -285,7 +285,7 @@ A Figura~\ref{fig:hist_fare} exibe o histograma das tarifas corrigidas para
 distribuição. O número de classes foi definido pela regra da raiz quadrada
 ($k \approx \sqrt{872} \approx 29$).
 
-\begin{figure}[H]
+\begin{figure}[t]
   \centering
   \includegraphics[width=\columnwidth]{hist_fare.png}
   \caption{Distribuição de frequência da tarifa por passageiro (valores
@@ -302,7 +302,7 @@ grupo pagou valores superiores a £20.000.
 A Figura~\ref{fig:hist_age} apresenta o histograma da idade com curva de
 densidade por kernel sobreposta.
 
-\begin{figure}[H]
+\begin{figure}[t]
   \centering
   \includegraphics[width=\columnwidth]{hist_age.png}
   \caption{Distribuição de frequência da idade por passageiro com
@@ -322,21 +322,21 @@ As Figuras~\ref{fig:gender}, \ref{fig:class} e~\ref{fig:survival} exibem,
 respectivamente, a distribuição de gênero, classe e sobrevivência, cada uma
 representada por um gráfico de barras e um gráfico de pizza.
 
-\begin{figure}[H]
+\begin{figure}[t]
   \centering
   \includegraphics[width=\columnwidth]{gender.png}
   \caption{Distribuição de gênero: contagem e proporção. Titanic.}
   \label{fig:gender}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[t]
   \centering
   \includegraphics[width=\columnwidth]{class.png}
   \caption{Distribuição por classe: contagem e proporção. Titanic.}
   \label{fig:class}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[t]
   \centering
   \includegraphics[width=\columnwidth]{survival.png}
   \caption{Distribuição de sobrevivência: contagem e proporção. Titanic.}
@@ -355,7 +355,7 @@ A Figura~\ref{fig:density} apresenta as curvas KDE das tarifas
 (escala logarítmica) estratificadas por classe, evidenciando o grau de
 diferenciação socioeconômica entre os grupos.
 
-\begin{figure}[H]
+\begin{figure}[t]
   \centering
   \includegraphics[width=\columnwidth]{density.png}
   \caption{Densidade da tarifa por classe (KDE, escala logarítmica). Titanic.}
@@ -372,7 +372,7 @@ variabilidade interna significativamente maior.
 
 \subsubsection{Sobrevivência por Classe}
 
-\begin{figure}[H]
+\begin{figure}[t]
   \centering
   \includegraphics[width=\columnwidth]{survival_class.png}
   \caption{Sobrevivência por classe (barras empilhadas proporcionais). Titanic.}
@@ -393,7 +393,7 @@ A diferença de 39 pontos percentuais entre a primeira e a terceira classe
 
 \subsubsection{Sobrevivência por Gênero}
 
-\begin{figure}[H]
+\begin{figure}[t]
   \centering
   \includegraphics[width=\columnwidth]{survival_gender.png}
   \caption{Sobrevivência por gênero (barras empilhadas proporcionais). Titanic.}
@@ -406,7 +406,7 @@ homens apresentaram apenas 19\%, uma diferença de 54 pontos percentuais.
 
 \subsubsection{Sobrevivência por Faixa Etária}
 
-\begin{figure}[H]
+\begin{figure}[t]
   \centering
   \includegraphics[width=\columnwidth]{survival_group_age.png}
   \caption{Sobrevivência por faixa etária (barras empilhadas proporcionais). Titanic.}
@@ -424,7 +424,7 @@ A Figura~\ref{fig:boxplot} exibe os boxplots de idade e tarifa 2024, com
 eixo $y$ em escala logarítmica para a tarifa a fim de acomodar os valores
 extremos.
 
-\begin{figure}[H]
+\begin{figure}[t]
   \centering
   \includegraphics[width=\columnwidth]{boxplot.png}
   \caption{Boxplot: Idade (esquerda) e Tarifa 2024 em escala logarítmica
@@ -435,14 +435,14 @@ extremos.
 Os percentis calculados para cada variável são apresentados nas
 Tabelas~\ref{tab:percentis_age} e~\ref{tab:percentis_fare}.
 
-\begin{figure}[H]
+\begin{figure}[t]
   \centering
   \includegraphics[width=0.55\columnwidth]{table_3_8_2.png}
   \caption{Percentis da variável Idade (P10, Q1, Q2, Q3, P90).}
   \label{tab:percentis_age}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[t]
   \centering
   \includegraphics[width=0.6\columnwidth]{table_3_8_3.png}
   \caption{Percentis da variável Tarifa 2024 (P10, Q1, Q2, Q3, P90).}
@@ -460,7 +460,7 @@ A Figura~\ref{fig:scatter} apresenta o diagrama de dispersão entre idade e
 tarifa 2024, com os pontos coloridos por sobrevivência, e a
 Figura~\ref{fig:correlacao} exibe a matriz de correlação de Pearson.
 
-\begin{figure}[H]
+\begin{figure}[t]
   \centering
   \includegraphics[width=\columnwidth]{scatter_pearson.png}
   \caption{Dispersão: Idade $\times$ Tarifa 2024. Coeficiente de Pearson
@@ -468,7 +468,7 @@ Figura~\ref{fig:correlacao} exibe a matriz de correlação de Pearson.
   \label{fig:scatter}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[t]
   \centering
   \includegraphics[width=\columnwidth]{matriz_correlacao.png}
   \caption{Matriz de correlação de Pearson (Idade $\times$ Tarifa 2024).
@@ -487,7 +487,7 @@ Na prática, isso significa que não há uma relação linear relevante entre as
 variáveis analisadas. Os resultados da correlação são detalhados na
 Tabela~\ref{tab:pearson}.
 
-\begin{figure}[H]
+\begin{figure}[t]
   \centering
   \includegraphics[width=0.6\columnwidth]{table_3_9.png}
   \caption{Coeficiente de correlação de Pearson entre Idade e Tarifa 2024.}
