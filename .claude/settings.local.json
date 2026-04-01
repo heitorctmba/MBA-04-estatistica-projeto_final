@@ -17,7 +17,9 @@
       "Bash(/tmp/add_votos_histogramas.py:*)",
       "Bash(sort -t' ' -k2 -n)",
       "Bash(/tmp/add_pearson.py:*)",
-      "Bash(curl -s https://raw.githubusercontent.com/heitorctmba/MBA-01-estatistica-eleicoes/main/README.md)"
+      "Bash(curl -s https://raw.githubusercontent.com/heitorctmba/MBA-01-estatistica-eleicoes/main/README.md)",
+      "Bash(mkdir -p notebooks reports)",
+      "Bash(git mv:*)"
     ]
   }
 }
