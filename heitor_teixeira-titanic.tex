@@ -12,7 +12,7 @@
 \usepackage{xcolor}
 \usepackage{fancybox}
 
-\graphicspath{{assets/titanic/plots/}}
+\graphicspath{{assets/titanic/plots/}{assets/titanic/tables/}}
 
 % Placeholder para tabelas (substituir por screenshot)
 \newcommand{\tablePlaceholder}[1]{%
@@ -165,9 +165,12 @@ passageiros sem custo de passagem registrado — a amostra final utilizada nas
 análises compreende \textbf{872 passageiros}. As variáveis foram renomeadas
 para o português e mapeadas conforme descrito na Tabela~\ref{tab:variaveis}.
 
-\tablePlaceholder{Tabela 3.2 — Identificação e classificação das variáveis:\\
-insira aqui o screenshot da tabela de variáveis do notebook (Seção 3.2)}
-\label{tab:variaveis}
+\begin{figure*}[ht]
+  \centering
+  \includegraphics[width=0.85\textwidth]{table_3_2.png}
+  \caption{Identificação e classificação das variáveis do dataset Titanic.}
+  \label{tab:variaveis}
+\end{figure*}
 
 \subsection{Correção Monetária das Tarifas}
 
@@ -187,10 +190,12 @@ multiplicativamente a cada tarifa original para obter a coluna
 \textit{Tarifa 2024}. A composição detalhada do índice é apresentada na
 Tabela~\ref{tab:inflacao}.
 
-\tablePlaceholder{Tabela 2.2.1 — Composição do índice de correção monetária
-(1912→2024):\\
-insira aqui o screenshot da tabela de inflação do notebook (Seção 2.2.1)}
-\label{tab:inflacao}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\columnwidth]{table_2_2_1.png}
+  \caption{Composição do índice de correção monetária (1912→2024).}
+  \label{tab:inflacao}
+\end{figure}
 
 \subsection{Faixas Etárias}
 
@@ -198,10 +203,12 @@ A variável idade contínua foi discretizada em quatro faixas etárias
 padronizadas segundo critérios demográficos usuais, conforme a
 Tabela~\ref{tab:faixas}:
 
-\tablePlaceholder{Tabela 2.4 — Distribuição por faixa etária
-(Criança / Jovem / Adulto / Idoso):\\
-insira aqui o screenshot da tabela de faixas etárias do notebook (Seção 2.4)}
-\label{tab:faixas}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.65\columnwidth]{table_2_4.png}
+  \caption{Distribuição de passageiros por faixa etária.}
+  \label{tab:faixas}
+\end{figure}
 
 As quatro faixas definidas foram: \textbf{Criança} (0--12 anos, $n=79$),
 \textbf{Jovem} (12--17 anos, $n=51$), \textbf{Adulto} (17--59 anos,
@@ -215,11 +222,12 @@ $n=711$) e \textbf{Idoso} (59--100 anos, $n=31$).
 A Tabela~\ref{tab:descritivas} apresenta as principais estatísticas
 descritivas das variáveis quantitativas do dataset.
 
-\tablePlaceholder{Tabela 3.1 — Estatísticas descritivas completas
-(contagem, média, desvio-padrão, mín., Q1, mediana, Q3, máx.):\\
-insira aqui o screenshot da tabela de estatísticas descritivas do notebook
-(Seção 3.1)}
-\label{tab:descritivas}
+\begin{figure*}[ht]
+  \centering
+  \includegraphics[width=0.9\textwidth]{table_3_1.png}
+  \caption{Estatísticas descritivas das variáveis quantitativas do dataset Titanic.}
+  \label{tab:descritivas}
+\end{figure*}
 
 Os principais resultados são:
 
@@ -393,17 +401,19 @@ extremos.
 Os percentis calculados para cada variável são apresentados nas
 Tabelas~\ref{tab:percentis_age} e~\ref{tab:percentis_fare}.
 
-\tablePlaceholder{Tabela 3.8.2 — Percentis da variável Idade
-(P10, Q1, Q2/Mediana, Q3, P90):\\
-insira aqui o screenshot da tabela de percentis de idade do notebook
-(Seção 3.8.2)}
-\label{tab:percentis_age}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.55\columnwidth]{table_3_8_2.png}
+  \caption{Percentis da variável Idade (P10, Q1, Q2, Q3, P90).}
+  \label{tab:percentis_age}
+\end{figure}
 
-\tablePlaceholder{Tabela 3.8.3 — Percentis da variável Tarifa 2024
-(P10, Q1, Q2/Mediana, Q3, P90):\\
-insira aqui o screenshot da tabela de percentis de tarifa do notebook
-(Seção 3.8.3)}
-\label{tab:percentis_fare}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\columnwidth]{table_3_8_3.png}
+  \caption{Percentis da variável Tarifa 2024 (P10, Q1, Q2, Q3, P90).}
+  \label{tab:percentis_fare}
+\end{figure}
 
 Para a idade, os quartis Q1, Q2 e Q3 correspondem a 20, 28 e 38 anos,
 respectivamente. Para a tarifa 2024, o Q1 está em £849,05, a mediana em
@@ -438,10 +448,12 @@ correlação positiva \emph{muito fraca} sob qualquer escala de referência
 convencional. Os resultados da correlação são detalhados na
 Tabela~\ref{tab:pearson}.
 
-\tablePlaceholder{Tabela 3.9 — Coeficiente de correlação de Pearson entre
-Idade e Tarifa 2024 ($r$ e \textit{p-value}):\\
-insira aqui o screenshot da tabela de correlação do notebook (Seção 3.9)}
-\label{tab:pearson}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\columnwidth]{table_3_9.png}
+  \caption{Coeficiente de correlação de Pearson entre Idade e Tarifa 2024.}
+  \label{tab:pearson}
+\end{figure}
 
 Esse resultado implica que a idade dos passageiros não determinou o preço
 da passagem: as tarifas foram definidas pela classe de acomodação escolhida,
