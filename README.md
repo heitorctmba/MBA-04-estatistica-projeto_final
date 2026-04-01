@@ -6,6 +6,10 @@ Final Project for the **Descriptive Statistics** course of the MBA in Data Scien
 
 Apply descriptive statistics concepts to two real-world datasets: the Titanic passenger dataset and Brazilian electoral campaign finance data. The analysis covers measures of central tendency, dispersion, and separatrices, as well as bar charts, histograms, scatter plots, Pearson correlation, and logarithmic scale.
 
+## Presentation Format
+
+This project will be presented to the professor in the form of a scientific article following the IEEE format. Since no specific template was required, the IEEE standard was chosen as it is a widely accepted technical and scientific format, appropriate for an MBA-level course.
+
 ---
 
 ## D1 — Titanic
