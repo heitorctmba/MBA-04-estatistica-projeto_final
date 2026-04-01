@@ -441,10 +441,13 @@ Figura~\ref{fig:correlacao} exibe a matriz de correlação de Pearson.
 
 O coeficiente de Pearson foi calculado via função \texttt{pearsonr} da
 biblioteca \textit{scipy.stats}, que retorna o valor de $r$ e o
-\textit{p-value} associado. O valor obtido foi $r = 0{,}115$ ($p = 0{,}0007$). Embora
-estatisticamente significativo ao nível de 0,1\%, o valor indica uma
-correlação positiva \emph{muito fraca} sob qualquer escala de referência
-convencional. Os resultados da correlação são detalhados na
+\textit{p-value} associado. O valor obtido foi $r = 0{,}115$ e $p = 0{,}0007$.  
+O \textit{p-value} indica que há uma probabilidade muito pequena (0,07\%) de
+essa correlação ter ocorrido apenas por acaso, caso não existisse nenhuma
+relação real entre as variáveis. Ainda assim, o valor de $r$ é muito baixo,
+caracterizando uma correlação positiva \emph{muito fraca}.  
+Na prática, isso significa que não há uma relação linear relevante entre as
+variáveis analisadas. Os resultados da correlação são detalhados na
 Tabela~\ref{tab:pearson}.
 
 \begin{figure}[H]
